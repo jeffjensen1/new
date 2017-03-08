@@ -1,0 +1,457 @@
+Jeff Jensen
+GIMM 300
+Homework 3
+
+JS Where to:
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+
+<body>
+
+<h1>A Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
+*//this code shows that when the button is pressed it calls "my function", so when the button is pressed it displays
+"paragraph changed" instead of of the demo "a paragraph".
+
+JS Output:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+//button pushed and shows output
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+//or you can have a window pop up showing output with this code below
+<script>
+window.alert(5 + 6);
+</script>
+
+</body>
+</html> 
+*// this code shows output, When the code is ran and button is pressed it will evaluate the 
+expression and display the output. 
+
+//Using innerHTML is a basic way to show output in html.
+document.getElementById("demo").innerHTML = 5 + 6;
+
+//HTML output using document.write() is another way to make output display after button click.
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+//Using console.log() to place in the browser console.
+console.log(5 + 6);
+
+JS Syntax:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Statements</h1>
+
+<p>Statements are separated by semicolons.</p>
+
+<p>The variables x, y, and z are assigned the values 5, 6, and 11.</p>
+
+<p>Then the value of z is displayed in the paragraph below:</p>
+
+<p id="demo"></p>
+
+<script>
+var x, y, z;
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+*// this code declares 3 variables and has an expression of x + y to run that will declare what z is and print it.
+
+document.getElementById("demo").innerHTML = 10.50;
+//Numbers can be written has decimals as well.
+
+document.getElementById("demo").innerHTML = 'John Doe';
+//strings can be written using single quotes.
+
+var x;
+x = 6;
+document.getElementById("demo").innerHTML = x;
+//we declared var x and then assigned it a value. When we print x it shows 6.
+
+document.getElementById("demo").innerHTML = (5 + 6) * 10;
+//we can calculate expressions using basic math symbols called operators. When ran this will equal 110.
+
+var x, y;
+x = 5;
+y = 6;
+document.getElementById("demo").innerHTML = x + y;
+//By using the = we can assign values to variables. now x = 5 and y = 6.
+
+document.getElementById("demo").innerHTML = "John" + " "  + "Doe";
+//We can use concatenation which adds words together. That will print out as John Doe. Its just like adding 6+5.
+
+var x;
+x = 5;
+document.getElementById("demo").innerHTML = x * 10;
+//another way we can use expressions, declare first then we can just use the variable instead of numbers.
+
+var x, y;
+//var is a keyword that is used to create new variables to use in your code. Keywords are reserved.
+
+// x = 6; I will not be executed
+// double backslash are used to create comments that are not read by your code when ran.
+
+var lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+document.getElementById("demo").innerHTML = lastname;
+//variables are case sensative and by not capitalizing the Name it will print Peterson, if you do it will print Doe.
+
+JS Statments:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Statements</h1>
+
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo1"></p>
+
+<script>
+var a, b, c;
+a = 1;
+b = 2;
+c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script>
+
+</body>
+</html>
+//So our statements are seperated by ; in order for our code to run. ; is the ending for that statement.
+
+var a, b, c;
+a = 1; b = 2; c = a + b;
+document.getElementById("demo1").innerHTML = c;
+//Multiple statements are allowed in one line using the ; as well. Prints 3
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Statements</h1>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo1").innerHTML = "Hello Dolly.";
+    document.getElementById("demo2").innerHTML = "How are you?";
+}
+</script>
+
+</body>
+</html>
+//Here we created a button and below we created a function, when the button is pressed the function will run.
+
+JS Comments:
+//Single line comments use a double backslash like //
+
+/*
+The code below will change
+the heading with id = "myH"
+and the paragraph with id = "myp"
+in my web page:
+*/
+// this is a multiple line comment using /* and */.
+
+JS Variables:
+var person = "John Doe", carName = "Volvo", price = 200;
+//Here you can declare many variables on one statement.
+
+JS Arithmetic:
+var z = x + y;
+//adds x and y using the +.
+
+var z = x - y;
+var z = x * y;
+//Subtracts x and y using the -.
+//Multiplies x and y using *.
+
+var z = x / y;
+//divides using the /
+
+var x = 5;
+var y = 2;
+var z = x % y;
+document.getElementById("demo").innerHTML = z;
+//divides 5 by 2 and takes the reminder = z. =1
+
+var y = 5;
+var x = ++y;
+document.getElementById("demo1").innerHTML = y;
+document.getElementById("demo2").innerHTML = x;
+//This will increment by 1 when using the ++.
+
+var x = 10;
+x %= 5;
+document.getElementById("demo").innerHTML = x;
+//= 0
+
+var x = 10;
+x *= 5;
+//= 50
+
+JS Data Types:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var carName1 = "Volvo XC60";
+var carName2 = 'Volvo XC60';
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"';
+
+document.getElementById("demo").innerHTML =
+carName1 + "<br>" + 
+carName2 + "<br>" + 
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
+</script>
+
+</body>
+</html>
+
+//This code here declares String variables at the time then prints them, by adding <br> that will
+break the line and return. 
+
+var x1 = 34.00;
+var x2 = 34;
+var y = 123e5;
+var z = 123e-5;
+
+document.getElementById("demo").innerHTML = x1 + "<br>" + x2 + "<br>" + y + "<br>" + z
+//This code declares Number Varaibles and prints them out. The 123e5 is just an exponent.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("demo").innerHTML = cars[0];
+</script>
+
+</body>
+</html>
+//This is how you can make an erray. Creates a group that is declared by the stop it is listed. First
+object is always zero not one.
+
+var person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+//This shows how you can create an object called person and create variables within.
+
+var x = 16 + 4 + "Volvo";
+document.getElementById("demo").innerHTML = x;
+//Adds numbers and strings together.
+
+var person;
+document.getElementById("demo").innerHTML =
+person + "<br>" + typeof person;
+//Has an undefined var, var must be defined in order to code to execute.
+
+var car = "";
+document.getElementById("demo").innerHTML =
+"The value is: " +
+car + "<br>" +
+"The type is: " + typeof car;
+//empty variables will run but return The value is:   The type is: string
+
+JS Objects:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Creating a JavaScript Object.</p>
+
+<p id="demo"></p>
+
+<script>
+var car = {type:"Fiat", model:"500", color:"white"};
+document.getElementById("demo").innerHTML = car.type;
+</script>
+
+</body>
+</html>
+//How to create an object. car is the object and type model color are variables within. 
+You can call on this varibales by using car.type or car.color.
+
+var person = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+//prints out John is 50 years old. Using more object methods. 
+
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       :  5566
+};
+document.getElementById("demo").innerHTML =
+person["firstName"] + " " + person["lastName"];
+</script>
+//Another way to use object methods but this uses the person["property"] instead person.property.
+
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       : 5566,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+//using object method, declares vars, full name has an actual function in it.
+
+JS Functions:
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World!";
+}
+</script>
+</head>
+
+<body>
+
+<p>When you click "Try it", a function will be called.</p>
+<p>The function will display a message.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+// A simple function that will excute when the button is pushed. prints hello world.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it" to call a function with arguments</p>
+
+<button onclick="myFunction('Harry Potter','Wizard')">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(name,job) {
+    document.getElementById("demo").innerHTML =
+    "Welcome " + name + ", the " + job + ".";
+}
+</script>
+
+</body>
+</html>
+// prints welcome Harry Potter, the Wizard. On button click execute function.
+
+<!DOCTYPE html>
+<html> 
+<head> 
+<script> 
+function myfunction(txt) { 
+    document.getElementById("demo").innerHTML = txt
+} 
+</script> 
+</head> 
+
+<body> 
+<p>
+When you click on one of the buttons, a function will be called. The function will display the argument that is passed to it.
+</p>
+
+<form> 
+<input type="button" onclick="myfunction('Good Morning!')" value="In the Morning"> 
+<input type="button" onclick="myfunction('Good Evening!')" value="In the Evening"> 
+</form> 
+
+<p id="demo"></p>
+
+</body> 
+</html> 
+//two buttons, when pressed each will display a message. each click will execute a different function.
+
+function myFunction(a, b) {
+    return a * b;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+//returns a * b then calls the varibale values in the function and prints. 4 *3
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo"></p>
+
+<script>
+function toCelsius(f) {
+    return (5/9) * (f-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+</script>
+
+</body>
+</html>
+//Converts F to C using a function that returns with the algorithm. then prints.
+
+
+
+
+
+
+ 
+
+
